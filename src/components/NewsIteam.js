@@ -5,7 +5,7 @@ export default class NewsIteam extends Component {
         let { title, description, imageUrl, newsUrl, author, date, source } = this.props;
         return (
             <div className="my-3">
-                <div className="card">
+                <div className="card" style={{height: "auto"}}>
                     <img src={!imageUrl ? "https://static.toiimg.com/photo/88952871.cms" : imageUrl} className="card-img-top" alt="Not Available" />
                     <div className="card-body">
                         <h5 className="card-title">{title}<span className="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{ left: "90%", zIndex: '1', fontSize:"13px" }}>
